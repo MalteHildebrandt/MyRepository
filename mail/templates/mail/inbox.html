@@ -12,6 +12,23 @@
     <hr>
 
     <div id="emails-view">
+        <div id ="emails-header"></div>
+        <div id ="emails-body"></div>
+    </div>
+
+    <div id="email-view">
+        <b>From:</b> <span id="email-from"></span>
+        <br>
+        <b>To:</b> <span id="email-to"></span>
+        <br>
+        <b>Timestamp:</b> <span id="email-timestamp"></span>
+        <br>
+        <b>Subject:</b> <span id="email-subject"></span>
+        <br>
+        <button class="btn btn-sm btn-primary" id="email-reply">Reply</button>
+        <button class="btn btn-sm btn-primary" id="email-archive"></button>
+        <hr>
+        <div id="email-body"></div> 
     </div>
 
     <div id="compose-view">
@@ -29,6 +46,7 @@
             <textarea class="form-control" id="compose-body" placeholder="Body"></textarea>
             <input type="submit" class="btn btn-primary"/>
         </form>
+        <div id="compose-message"></div>
     </div>
 {% endblock %}
 

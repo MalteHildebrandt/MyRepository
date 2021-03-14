@@ -1,3 +1,17 @@
 textarea {
     min-height: 400px;
 }
+
+.mailInMailbox {
+    border-style: solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+.mailInMailboxRed {
+    background-color: lightgray;
+}
+
+.mailInMailbox:hover {
+    background-color: gray;
+}

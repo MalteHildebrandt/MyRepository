@@ -70,6 +70,7 @@ def compose(request):
         email.save()
 
     return JsonResponse({"message": "Email sent successfully."}, status=201)
+    
 
 
 @login_required
