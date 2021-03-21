@@ -1,0 +1,20 @@
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.index-post, #index-newpostbox {
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+#index-newpostsubmit, #edit-submit {
+    margin-top: 5px
+}
+
+.username {
+    font-size: x-large
+}

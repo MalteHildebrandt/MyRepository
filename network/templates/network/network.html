@@ -1,0 +1,15 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+    
+    <h1>Users in this network</h1>
+    Click on a username to get to the user's homepage
+    <br>
+
+    {% for user in users %}
+        <a href="{% url 'profile' user_id=user.id %}">{{ user.username }}</a>
+        <br>
+    {% endfor %}
+    
+{% endblock %}

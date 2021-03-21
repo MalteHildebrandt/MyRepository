@@ -1,0 +1,14 @@
+{% extends "network/layout.html" %}
+{% load static %}
+
+{% block body %}
+    <h1>Posts from users you follow</h1>
+    {% if user.is_authenticated %}
+        {% include 'network/post.html' %}
+    {% endif %}
+    
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'network/index.js' %}"></script>
+{% endblock %}
